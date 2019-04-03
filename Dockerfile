@@ -7,7 +7,7 @@ ENV ["LANGUAGE", "en_US:en"]
 ENV ["LC_ALL", "en_US.UTF-8"]
 
 RUN ["apt-get", "-y", "update"]
-RUN ["apt-get", "-y", "install", "apt-src", "build-essential", "cmake", "git", "golang", "gpg", "libunwind-dev", "mercurial", "ninja-build", "sudo", "wget"]
+RUN ["apt-get", "-y", "install", "apt-src", "build-essential", "cmake", "git", "golang", "gpg", "libunwind-dev", "ninja-build", "wget"]
 
 RUN ["wget", "https://nginx.org/keys/nginx_signing.key", "-O", "/etc/apt/trusted.gpg.d/nginx"]
 RUN ["gpg", "--dearmor", "/etc/apt/trusted.gpg.d/nginx"]
